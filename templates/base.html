@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}אוצר מילים - Quiz{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <h1 class="logo">📚 Vocabulary Trainer</h1>
+            <nav class="nav">
+                <a href="{{ url_for('index') }}">דף הבית</a>
+                <a href="{{ url_for('flashcards') }}">כרטיסיות</a>
+                <a href="{{ url_for('quiz') }}">Quiz אקראי</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>נבנה ב-Flask בשביל ללמוד למבחן ✨</p>
+        </div>
+    </footer>
+</body>
+
+</html>
