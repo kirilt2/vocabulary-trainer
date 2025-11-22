@@ -461,11 +461,11 @@ INDEX_TEMPLATE = BASE_TEMPLATE.replace(
     """
 <section class="hero">
     <h2>לימוד מילים למבחן באנגלית</h2>
-    <p>יש לך {{ total }} מילים. אפשר לתרגל בכרטיסיות או לעשות Quiz עם 20 מילים אקראיות.</p>
+    <p>יש לך {{ total }} מילים. אפשר לתרגל בכרטיסיות או לעשות Quiz עם 30 מילים אקראיות.</p>
     
     <div class="hero-buttons">
         <a class="btn primary" href="/flashcards">כרטיסיות אנגלית ↔ עברית</a>
-        <a class="btn secondary" href="/quiz">התחל Quiz של 50 מילים</a>
+        <a class="btn secondary" href="/quiz">התחל Quiz של 30 מילים</a>
     </div>
 </section>
 """
@@ -687,11 +687,11 @@ WORDS = [
     {"id": 2, "english": "excitement (n)", "hebrew": "התרגשות"},
 
     # PART 1
-    {"id": 3, "english": "colleague (n)", "hebrew": "עמית / קולגה"},
+    {"id": 3, "english": "colleague (n)", "hebrew": "עמית"},
     {"id": 4, "english": "favor (n)", "hebrew": "טובה"},
     {"id": 5, "english": "ancient (adj)", "hebrew": "עתיק"},
-    {"id": 6, "english": "consider (to be) (v)", "hebrew": "לראות כ / לשקול"},
-    {"id": 7, "english": "find (it) (funny)", "hebrew": "למצוא (משהו) מצחיק"},
+    {"id": 6, "english": "consider (to be) (v)", "hebrew": "לראות כ / להחשיב כ"},
+    {"id": 7, "english": "find (it) (funny)", "hebrew": "למצוא את זה מצחיק"},
     {"id": 8, "english": "laugh at", "hebrew": "לצחוק על"},
     {"id": 9, "english": "importance (n)", "hebrew": "חשיבות"},
     {"id": 10, "english": "jar (n)", "hebrew": "צנצנת"},
@@ -706,11 +706,11 @@ WORDS = [
     {"id": 17, "english": "culture (n)", "hebrew": "תרבות"},
     {"id": 18, "english": "dictation (n)", "hebrew": "הכתבה"},
     {"id": 19, "english": "adverb (n)", "hebrew": "תואר הפועל"},
-    {"id": 20, "english": "eventually (adv)", "hebrew": "בסופו של דבר"},
+    {"id": 20, "english": "eventually (adv)", "hebrew": "לבסוף / בסופו של דבר"},
     {"id": 21, "english": "pass through", "hebrew": "לעבור דרך"},
-    {"id": 22, "english": "arrange (v)", "hebrew": "לסדר / לארגן"},
+    {"id": 22, "english": "arrange (v)", "hebrew": "לארגן / לסדר"},
     {"id": 23, "english": "excuse (n)", "hebrew": "תירוץ"},
-    {"id": 24, "english": "article", "hebrew": "מאמר"},
+    {"id": 24, "english": "article (n)", "hebrew": "מאמר"},
     {"id": 25, "english": "contrast (n, v)", "hebrew": "ניגוד / להשוות בניגוד"},
     {"id": 26, "english": "fire (n, v)", "hebrew": "אש / לפטר / לירות"},
     {"id": 27, "english": "mean (adj)", "hebrew": "מרושע"},
@@ -723,22 +723,22 @@ WORDS = [
     {"id": 34, "english": "defend (v)", "hebrew": "להגן"},
     {"id": 35, "english": "forgive (v)", "hebrew": "לסלוח"},
     {"id": 36, "english": "midday (n)", "hebrew": "צהריים"},
-    {"id": 37, "english": "mind (n, v)", "hebrew": "שכל / אכפת / להתנגד"},
+    {"id": 37, "english": "mind (n, v)", "hebrew": "שכל / להפריע / להיות אכפת"},
     {"id": 38, "english": "smoke (n, v)", "hebrew": "עשן / לעשן"},
     {"id": 39, "english": "attitude (n)", "hebrew": "גישה"},
     {"id": 40, "english": "gas", "hebrew": "גז / דלק"},
     {"id": 41, "english": "so that", "hebrew": "כדי ש..."},
-    {"id": 42, "english": "be expecting", "hebrew": "לצפות (למשהו)"},
+    {"id": 42, "english": "be expecting", "hebrew": "לצפות למשהו"},
     {"id": 43, "english": "in other words", "hebrew": "במילים אחרות"},
-    {"id": 44, "english": "attempt (v)", "hebrew": "ניסיון / לנסות"},
+    {"id": 44, "english": "attempt (v)", "hebrew": "לנסות / ניסיון"},
     {"id": 45, "english": "deny (v)", "hebrew": "להכחיש"},
     {"id": 46, "english": "gather (v)", "hebrew": "לאסוף / להתאסף"},
     {"id": 47, "english": "nowadays (adv)", "hebrew": "בימינו"},
     {"id": 48, "english": "stranger (n)", "hebrew": "זר"},
     {"id": 49, "english": "base on", "hebrew": "לבסס על"},
     {"id": 50, "english": "dive (v)", "hebrew": "לצלול"},
-    {"id": 51, "english": "give (someone) a call", "hebrew": "להתקשר ל..."},
-    {"id": 52, "english": "play a trick on", "hebrew": "לעשות תעלול ל..."},
+    {"id": 51, "english": "give (someone) a call", "hebrew": "להתקשר למישהו"},
+    {"id": 52, "english": "play a trick on", "hebrew": "לעשות תעלול למישהו"},
     {"id": 53, "english": "study (n, v)", "hebrew": "לימוד / ללמוד"},
     {"id": 54, "english": "board (v)", "hebrew": "לעלות (למטוס/אוטובוס)"},
     {"id": 55, "english": "just (adv)", "hebrew": "רק / פשוט"},
@@ -746,11 +746,11 @@ WORDS = [
     {"id": 57, "english": "borrow (v)", "hebrew": "לשאול (לקחת בהשאלה)"},
     {"id": 58, "english": "duty (n)", "hebrew": "חובה / תפקיד"},
     {"id": 59, "english": "happiness (n)", "hebrew": "אושר"},
-    {"id": 60, "english": "pop (n)", "hebrew": "פופ / פקיעה קלה"},
+    {"id": 60, "english": "pop (n)", "hebrew": "פופ / פיצוץ קטן"},
     {"id": 61, "english": "the public", "hebrew": "הציבור"},
     {"id": 62, "english": "certain (adj)", "hebrew": "מסוים / בטוח"},
-    {"id": 63, "english": "bring (someone) luck", "hebrew": "להביא מזל (למישהו)"},
-    {"id": 64, "english": "later (adv)", "hebrew": "אחר כך"},
+    {"id": 63, "english": "bring (someone) luck", "hebrew": "להביא מזל למישהו"},
+    {"id": 64, "english": "later (adv)", "hebrew": "מאוחר יותר / אחר כך"},
     {"id": 65, "english": "elementary (adj)", "hebrew": "יסודי"},
     {"id": 66, "english": "hardly (adv)", "hebrew": "בקושי"},
     {"id": 67, "english": "record (n, v)", "hebrew": "שיא / להקליט"},
@@ -760,16 +760,16 @@ WORDS = [
     {"id": 71, "english": "lay the table", "hebrew": "לערוך את השולחן"},
     {"id": 72, "english": "elevator (n)", "hebrew": "מעלית"},
     {"id": 73, "english": "hit (n)", "hebrew": "פגיעה / להיט"},
-    {"id": 74, "english": "result in", "hebrew": "לגרום ל"},
+    {"id": 74, "english": "result in", "hebrew": "להוביל ל / לגרום ל"},
     {"id": 75, "english": "tweet (n, v)", "hebrew": "ציוץ / לצייץ"},
-    {"id": 76, "english": "crucial (adj)", "hebrew": "קריטי"},
+    {"id": 76, "english": "crucial (adj)", "hebrew": "קריטי / חיוני"},
     {"id": 77, "english": "period (n)", "hebrew": "תקופה / נקודה"},
     {"id": 78, "english": "experience (n)", "hebrew": "ניסיון / חוויה"},
     {"id": 79, "english": "phrase (n)", "hebrew": "ביטוי / צירוף מילים"},
     {"id": 80, "english": "noun", "hebrew": "שם עצם"},
-    {"id": 81, "english": "the press (n)", "hebrew": "העיתונות"},
+    {"id": 81, "english": "the press (n)", "hebrew": "התקשורת / העיתונות"},
     {"id": 82, "english": "paragraph (n)", "hebrew": "פסקה"},
-    {"id": 83, "english": "to be honest", "hebrew": "בכנות / האמת היא ש..."},
+    {"id": 83, "english": "to be honest", "hebrew": "האמת היא ש... / בכנות"},
     {"id": 84, "english": "tone (n)", "hebrew": "טון / נימה"},
     {"id": 85, "english": "understanding (n)", "hebrew": "הבנה"},
 
@@ -781,12 +781,12 @@ WORDS = [
     {"id": 90, "english": "plural (n, adj)", "hebrew": "רבים"},
     {"id": 91, "english": "in fact", "hebrew": "למעשה"},
     {"id": 92, "english": "question mark (n)", "hebrew": "סימן שאלה"},
-    {"id": 93, "english": "rather (adv)", "hebrew": "די / עדיף / במקום"},
+    {"id": 93, "english": "rather (adv)", "hebrew": "די / עדיף"},
     {"id": 94, "english": "relatively (adv)", "hebrew": "יחסית"},
     {"id": 95, "english": "route (n)", "hebrew": "מסלול / דרך"},
     {"id": 96, "english": "singular (adj)", "hebrew": "יחיד"},
     {"id": 97, "english": "noticeboard (n)", "hebrew": "לוח מודעות"},
-    {"id": 98, "english": "tense (n)", "hebrew": "זמן (דקדוקי)"},
+    {"id": 98, "english": "tense (n)", "hebrew": "זמן דקדוקי"},
     {"id": 99, "english": "notes (n)", "hebrew": "הערות / סיכומים"},
     {"id": 100, "english": "opinion (n)", "hebrew": "דעה"},
     {"id": 101, "english": "speaker (n)", "hebrew": "דובר"},
@@ -794,6 +794,7 @@ WORDS = [
     {"id": 103, "english": "support (v)", "hebrew": "לתמוך"},
     {"id": 104, "english": "topic (n)", "hebrew": "נושא"},
 ]
+
 
 
 # ==================== ROUTES ====================
@@ -817,7 +818,7 @@ def quiz():
     """
     if request.method == "GET":
         # Take up to 20 random words
-        questions = random.sample(WORDS, min(50, len(WORDS)))
+        questions = random.sample(WORDS, min(30, len(WORDS)))
 
         quiz_data = []
         for word in questions:
